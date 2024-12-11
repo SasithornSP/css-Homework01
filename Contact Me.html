@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contact</title>
+    <style>
+         * {margin: 8px;}
+         
+        .div-a {
+            padding : 10px;
+        }
+        input {
+            margin-left: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="./index.html">Home</a>|
+        <a href="./Education.html">Education</a>|
+        <a href="./Work.html">Work Experience</a>|
+        <a href="#">Contact Me</a>|
+    </div>
+    <hr>
+    <h1>Contact Me</h1>
+    <div class="div-a">
+        <fieldset style="width: 450px;
+        border-radius: 10px; ">
+        
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+        <div>Enter Your info.. </div> <br>
+        <label  for="fname">Your Name:</label><br>
+        <input style="width: 400px;" type="text" name="fname" value=""><br>
+        <label for="email">Your E-mail:</label><br>
+        <input style="width: 400px;" type="email" name="email" value=""><br>
+        <!-- <div>
+            <label>
+                Gender : <br>
+                <select name="Gender">
+                    <option value="" selected disabled> Please select</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    <option value="O">Others</option>
+                </select>
+            </label>
+        </div> -->
+    
+        <label for="Gender">Gender :</label> 
+        <select style="width: 400px;" name="Gender" size=”4” aria-selected="select...">
+            <option value="" selected disabled> Please select</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="O">Others</option>
+        </select>
+
+        <div> Message : </div>
+        <TEXTAREA NAME=Message rows="10" cols="50" >
+        </TEXTAREA>
+    
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </form>
+    </div>
+    
+
+</body>
+</html>
